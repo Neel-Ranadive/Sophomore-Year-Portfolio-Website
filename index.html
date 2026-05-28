@@ -4,87 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neel Ranadive - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <div class="nav-brand">Neel Ranadive</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a class="navbar-brand" href="#">Neel Ranadive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero bg-primary text-white text-center py-5">
         <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm Neel Ranadive</h1>
-                <p class="hero-subtitle">Sophomore | Developer | Problem Solver</p>
-                <p class="hero-description">Welcome to my portfolio. Here you'll find my projects, skills, and experiences from my sophomore year.</p>
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-            </div>
+            <h1 class="display-4">Hi, I'm Neel Ranadive</h1>
+            <p class="lead">Student | Developer | Problem Solver</p>
+            <p>Welcome to my portfolio. Here you'll find my projects, skills, and experiences from my sophomore year.</p>
+            <a href="#projects" class="btn btn-light btn-lg">View My Work</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="py-5">
         <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>I'm a passionate second-year student interested in software development, design, and building meaningful projects. I love learning new technologies and applying them to solve real-world problems.</p>
-                <p>This portfolio showcases the work I've done during my sophomore year, including personal projects, coursework, and technical experiences.</p>
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-6">
+                    <p>Hello! I'm Neel, a sophomore passionate about computer science and software development. I enjoy solving complex problems and building innovative solutions.</p>
+                    <p>My journey in computer science has been fueled by curiosity and a desire to create impactful projects.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="bg-light py-5">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <div class="project-info">
-                        <h3>Project One</h3>
-                        <p>A brief description of your first project. What problem does it solve?</p>
-                        <div class="project-tags">
-                            <span class="tag">Technology 1</span>
-                            <span class="tag">Technology 2</span>
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h5 class="card-title">Project 1: Interactive Calculator</h5>
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
+                        <div class="card-body">
+                            <iframe src="projects/calculator/index.html" class="w-100" style="height: 300px; border: none;"></iframe>
+                            <p class="mt-3">A simple calculator built with HTML, CSS, and JavaScript. Perform basic arithmetic operations interactively.</p>
+                            <a href="projects/calculator/index.html" target="_blank" class="btn btn-primary">Open in Fullscreen</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <div class="project-info">
-                        <h3>Project Two</h3>
-                        <p>A brief description of your second project. What made it interesting?</p>
-                        <div class="project-tags">
-                            <span class="tag">Technology 1</span>
-                            <span class="tag">Technology 2</span>
+                <!-- Project 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h5 class="card-title">Project 2: To-Do List App</h5>
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <div class="project-info">
-                        <h3>Project Three</h3>
-                        <p>A brief description of your third project. What did you learn?</p>
-                        <div class="project-tags">
-                            <span class="tag">Technology 1</span>
-                            <span class="tag">Technology 2</span>
+                        <div class="card-body">
+                            <iframe src="projects/todo/index.html" class="w-100" style="height: 300px; border: none;"></iframe>
+                            <p class="mt-3">A to-do list application to manage tasks. Built with JavaScript and local storage for persistence.</p>
+                            <a href="projects/todo/index.html" target="_blank" class="btn btn-primary">Open in Fullscreen</a>
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
                     </div>
                 </div>
             </div>
@@ -92,62 +91,63 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="py-5">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>HTML/CSS</li>
-                        <li>Java</li>
-                    </ul>
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h5>Languages</h5>
+                    <p>Python, JavaScript, C++</p>
                 </div>
-                <div class="skill-category">
-                    <h3>Tools & Frameworks</h3>
-                    <ul>
-                        <li>React</li>
-                        <li>Node.js</li>
-                        <li>Git/GitHub</li>
-                        <li>VS Code</li>
-                    </ul>
+                <div class="col-md-4">
+                    <h5>Frameworks</h5>
+                    <p>React, Bootstrap, Flask</p>
                 </div>
-                <div class="skill-category">
-                    <h3>Other Skills</h3>
-                    <ul>
-                        <li>Problem Solving</li>
-                        <li>Web Development</li>
-                        <li>UI/UX Design</li>
-                        <li>Team Collaboration</li>
-                    </ul>
+                <div class="col-md-4">
+                    <h5>Tools</h5>
+                    <p>Git, Docker, VS Code</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="bg-primary text-white py-5">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p>Feel free to reach out! I'm always interested in connecting with new people.</p>
-            <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="contact-link">Email</a>
-                <a href="https://github.com" target="_blank" class="contact-link">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" class="contact-link">LinkedIn</a>
-                <a href="https://twitter.com" target="_blank" class="contact-link">Twitter</a>
+            <h2 class="text-center mb-4">Contact</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Email: <a href="mailto:neel@example.com" class="text-white">neel@example.com</a></p>
+                    <p>GitHub: <a href="https://github.com/neelranadive" class="text-white">github.com/neelranadive</a></p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/neelranadive" class="text-white">linkedin.com/in/neelranadive</a></p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Neel Ranadive. All rights reserved.</p>
-        </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Neel Ranadive. All rights reserved.</p>
     </footer>
 
-    <script src="script.js" defer></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
