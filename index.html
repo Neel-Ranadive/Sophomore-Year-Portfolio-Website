@@ -43,7 +43,7 @@
       <div class="row align-items-center">
         <div class="col-lg-8 mx-auto">
           <p class="lead">I am a sophomore in Computer & Information Sciences who is passionate about building practical software and embedded systems. My work is focused on Software Engineering, data-driven automation, and hardware-software integration for reliable IoT solutions.</p>
-          <p>During this academic year, I completed four major projects that demonstrate my ability to analyze requirements, choose appropriate technology stacks, and resolve bugs through testing, code review, and iterative improvement. I use formal development practices, clear documentation, and an industry-minded approach to every project.</p>
+          <p>These portfolio projects were developed as original course work, with an emphasis on clean design, methodical debugging, and industrial-quality documentation. I completed each project independently and can explain the design decisions, implementation details, and test results for every line of code.</p>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
   <section id="projects" class="bg-light py-5">
     <div class="container">
       <h2 class="text-center mb-4">Project Showcase</h2>
-      <p class="text-center mb-5">Each project below includes a problem statement, technical stack, process reflection, and artifact evidence.</p>
+      <p class="text-center mb-5">Each project below includes a problem statement, technical stack, process reflection, and artifact evidence. CodeHS sandbox links provide both the live demonstration and the source code for each project.</p>
       <div class="row g-4">
         <div class="col-12 col-md-6 col-lg-3">
           <div class="card h-100">
@@ -84,10 +84,10 @@
         </div>
         <div class="col-12 col-md-6 col-lg-3">
           <div class="card h-100">
-            <div class="card-header text-center"><h5 class="card-title mb-0">Embedded Sensor Project</h5></div>
+            <div class="card-header text-center"><h5 class="card-title mb-0">Pointers and References</h5></div>
             <div class="card-body d-flex flex-column">
-              <p class="mb-3">An Arduino and web-based project that collects sensor data and presents it with serial reporting.</p>
-              <a href="#project-embedded" class="btn btn-primary mt-auto">View details</a>
+              <p class="mb-3">A C++ project that demonstrates pointer arithmetic and reference semantics for safer memory handling.</p>
+              <a href="#project-pointers" class="btn btn-primary mt-auto">View details</a>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
       <article id="project-grade" class="project-detail mb-5">
         <h3>Grade Calculator</h3>
         <p class="small text-uppercase mb-2">Project 1 • Web Application</p>
-        <p>This project calculates weighted grades for assignments, quizzes, and exams, so students can see how individual scores affect their final grade.</p>
+        <p>This web application models weighted grading schemes so students can forecast their final course grades and understand how assignment scores affect outcomes.</p>
         <div class="row gy-4">
           <div class="col-lg-8">
             <h5>Technical Stack</h5>
@@ -111,13 +111,15 @@
               <li>CodeHS web sandbox</li>
             </ul>
             <h5>Process & Challenges</h5>
-            <p>I designed the calculator interface to accept different grade weights and validate numeric input. I also ensured the result calculation updated correctly when users changed values.</p>
-            <p>The main challenge was handling invalid or missing entries without breaking the application. I added input checks and clear error prompts so users always understand what to fix.</p>
-            <p><strong>Artifact:</strong> <a href="https://codehs.com/sandbox/id/apcsp-performance-task-Gfa7OY/run" target="_blank" rel="noreferrer noopener">Live Grade Calculator demo</a></p>
+            <p>I designed the user interface to clearly separate grade categories, weights, and score inputs, while keeping the calculation logic modular. I developed validation logic to reject invalid entries and recalculate the total score instantly whenever values changed.</p>
+            <p>The main challenge was ensuring the formula handled missing or incorrectly formatted values without displaying misleading results. I solved this by adding explicit input checks, user-friendly error messaging, and conditional rendering of the final grade output.</p>
+            <p><strong>Artifact:</strong> <a href="https://codehs.com/sandbox/id/apcsp-performance-task-Gfa7OY" target="_blank" rel="noreferrer noopener">Live Grade Calculator demo and source code</a></p>
           </div>
           <div class="col-lg-4">
-            <div class="project-screenshot">Grade Calculator UI preview</div>
-            <p class="small mt-2">Live demo available through the CodeHS sandbox link.</p>
+            <div class="project-screenshot">
+              <img class="project-image" src="portfoliopythonperformancetask.PNG" alt="Grade Calculator CodeHS screenshot">
+            </div>
+            <p class="small mt-2">Screenshot from the CodeHS Grade Calculator project.</p>
           </div>
         </div>
       </article>
@@ -125,71 +127,77 @@
       <article id="project-crypto" class="project-detail mb-5">
         <h3>Crypto Tracker</h3>
         <p class="small text-uppercase mb-2">Project 2 • Python Application</p>
-        <p>This Python application loads cryptocurrency price data and displays current values so users can track market movements in real time.</p>
+        <p>This Python application retrieves live cryptocurrency price data and organizes it into a readable report, helping users compare asset values and identify short-term market changes.</p>
         <div class="row gy-4">
           <div class="col-lg-8">
             <h5>Technical Stack</h5>
             <ul>
               <li>Python 3</li>
-              <li>Requests-style API calls and JSON processing</li>
+              <li>HTTP requests and JSON parsing</li>
               <li>CodeHS Python runtime</li>
             </ul>
             <h5>Process & Challenges</h5>
-            <p>I built the data retrieval logic, parsed JSON fields, and formatted the output for readability. I also added error handling for missing or malformed API data.</p>
-            <p>Debugging required careful inspection of data responses and handling network-style failures inside the sandbox environment. I added fallback messages when the service returned unexpected values.</p>
-            <p><strong>Artifact:</strong> <a href="https://codehs.com/sandbox/id/python-files-lab-Yzh5AR/run" target="_blank" rel="noreferrer noopener">Live Crypto Tracker demo</a></p>
+            <p>I implemented the API fetch flow, parsed nested JSON responses, and formatted numeric values for easy comparison. I focused on creating a robust parser that validated the API response before processing it.</p>
+            <p>The primary challenge was handling inconsistent or incomplete API data within the sandbox constraints. I added defensive checks, fallback output messages, and clear error handling to keep the application stable during network-style failures.</p>
+            <p><strong>Artifact:</strong> <a href="https://codehs.com/sandbox/id/python-files-lab-Yzh5AR" target="_blank" rel="noreferrer noopener">Live Crypto Tracker demo and source code</a></p>
           </div>
           <div class="col-lg-4">
-            <div class="project-screenshot">Crypto Tracker output preview</div>
-            <p class="small mt-2">Live demo available through the CodeHS sandbox link.</p>
+            <div class="project-screenshot">
+              <img class="project-image" src="portfoliopythonfileslab.PNG" alt="Crypto Tracker CodeHS screenshot">
+            </div>
+            <p class="small mt-2">Screenshot from the CodeHS Crypto Tracker project.</p>
           </div>
         </div>
       </article>
 
       <article id="project-dungeon" class="project-detail mb-5">
         <h3>Multiplayer Dungeon Game</h3>
-        <p class="small text-uppercase mb-2">Project 3 • C++ Application</p>
-        <p>This C++ text-based game allows multiple players to explore a dungeon, fight monsters, and manage resources in turn-based gameplay.</p>
+        <p class="small text-uppercase mb-2">Project 3 • C++ Command-Line Game</p>
+        <p>This text-based C++ game creates a multiplayer dungeon environment where players explore rooms, fight monsters, and manage items while the program maintains consistent game state.</p>
         <div class="row gy-4">
           <div class="col-lg-8">
             <h5>Technical Stack</h5>
             <ul>
               <li>C++</li>
               <li>CodeHS C++ sandbox environment</li>
-              <li>Console I/O, data structures, game loop logic</li>
+              <li>Console I/O, structs, arrays, and game loop logic</li>
             </ul>
             <h5>Process & Challenges</h5>
-            <p>I built the game engine with state management for players, enemies, and inventory. I also implemented combat and movement logic to create a more interactive experience.</p>
-            <p>Balancing the difficulty and debugging multiplayer state transitions were the biggest challenges. I used step-by-step testing to verify that actions from one player did not corrupt the shared game state.</p>
-            <p><strong>Artifact:</strong> <a href="https://codehs.com/sandbox/id/c-final-project-RtDyC2/run" target="_blank" rel="noreferrer noopener">Live Dungeon Game demo</a></p>
+            <p>I designed the game architecture with separate systems for player state, enemy encounters, and inventory management, which improved code organization and readability. I also implemented the main game loop and player action handling to support multiple turns and conflict resolution.</p>
+            <p>The biggest challenge was ensuring that multiple players shared a consistent world state without actions interfering with each other. I used iterative testing and step-by-step debugging to verify that movement, combat, and item usage updated correctly.</p>
+            <p><strong>Artifact:</strong> <a href="https://codehs.com/sandbox/id/c-final-project-RtDyC2" target="_blank" rel="noreferrer noopener">Live Dungeon Game demo and source code</a></p>
           </div>
           <div class="col-lg-4">
-            <div class="project-screenshot">Dungeon Game console screenshot</div>
-            <p class="small mt-2">Live demo available through the CodeHS sandbox link.</p>
+            <div class="project-screenshot">
+              <img class="project-image" src="portfolioC++finalprojectsnip.PNG" alt="Dungeon Game CodeHS screenshot">
+            </div>
+            <p class="small mt-2">Screenshot from the CodeHS Dungeon Game project.</p>
           </div>
         </div>
       </article>
 
-      <article id="project-embedded" class="project-detail mb-5">
-        <h3>Embedded Sensor Project</h3>
-        <p class="small text-uppercase mb-2">Project 4 • Embedded Systems</p>
-        <p>This Arduino-based project gathers sensor readings and reports values over serial, demonstrating a hardware-software integrated solution.</p>
+      <article id="project-pointers" class="project-detail mb-5">
+        <h3>Pointers and References C++ Project</h3>
+        <p class="small text-uppercase mb-2">Project 4 • C++ Command-Line Application</p>
+        <p>This C++ project demonstrates pointer and reference usage through a decision-based program that updates variable values across function calls and validates safe memory access.</p>
         <div class="row gy-4">
           <div class="col-lg-8">
             <h5>Technical Stack</h5>
             <ul>
-              <li>Arduino C++</li>
-              <li>Sensor hardware and serial communication</li>
-              <li>Web reporting interface</li>
+              <li>C++</li>
+              <li>CodeHS C++ sandbox environment</li>
+              <li>Pointer arithmetic, references, and parameter passing</li>
             </ul>
             <h5>Process & Challenges</h5>
-            <p>I designed the sensor polling logic, formatted serial output cleanly, and connected the hardware data stream with a simple web display. I also verified that readings remained stable in real-time.</p>
-            <p>The main challenge was ensuring reliable communication from the Arduino to the web layer. I validated packet framing and added retries for intermittent serial errors.</p>
-            <p><strong>Artifact:</strong> <a href="projects/embedded-sensor/index.html" target="_blank">Embedded Sensor project details</a></p>
+            <p>I developed examples that compare pointer dereferencing and reference aliasing, including functions that modify values through both approaches. I carefully structured the code to keep pointers initialized and references bound to valid objects.</p>
+            <p>The key challenge was preventing undefined behavior while demonstrating different memory access patterns. I used focused sandbox tests to confirm each pointer and reference operation produced the expected result.</p>
+            <p><strong>Artifact:</strong> <a href="https://codehs.com/sandbox/id/which-door-pointers-and-references-ceB1Oq" target="_blank" rel="noreferrer noopener">Live Pointers and References demo and source code</a></p>
           </div>
           <div class="col-lg-4">
-            <div class="project-screenshot">Embedded Sensor project preview</div>
-            <p class="small mt-2">Open the local embedded sensor project page for more details.</p>
+            <div class="project-screenshot">
+              <img class="project-image" src="portfolioC++whichdoor.PNG" alt="Pointers and References CodeHS screenshot">
+            </div>
+            <p class="small mt-2">Screenshot from the CodeHS Pointers and References project.</p>
           </div>
         </div>
       </article>
